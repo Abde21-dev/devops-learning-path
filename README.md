@@ -57,3 +57,4 @@ git status
 ## Journal d'apprentissage
 - 2026-06-04 : Module Linux terminé
 - 2026-06-06 : Module Git en cours
+- 2026-06-07 : Module Docker prévu
