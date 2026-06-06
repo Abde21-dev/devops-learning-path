@@ -53,3 +53,7 @@ Ctrl+O → Entrée → Ctrl+X, puis :
 
 
 git status
+
+## Journal d'apprentissage
+- 2026-06-04 : Module Linux terminé
+- 2026-06-06 : Module Git en cours
