@@ -1,0 +1,26 @@
+name: Pipeline DevOps
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  verifier:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v3
+
+      - name: Vérifier les scripts bash
+        run: |
+          echo "Vérification des scripts..."
+          ls -la *.sh
+          bash -n rapport-systeme.sh && echo "rapport-systeme.sh : syntaxe OK"
+          bash -n verification.sh && echo "verification.sh : syntaxe OK"
+
+      - name: Afficher infos système
+        run: |
+          echo "OS : $(uname -a)"
+          echo "Date : $(date)"
+          echo "Pipeline terminé avec succès"
